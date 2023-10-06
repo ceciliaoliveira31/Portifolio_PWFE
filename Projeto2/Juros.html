@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros</title>
+    <link rel="stylesheet" href="estilo_exercicios.css">
+    <link rel="icon" href="imagens/logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Mukta&display=swap');
+    </style>
+</head>
+<body>
+    <div class="tudo">
+        <header>
+            <figure>
+                <img src = "imagens/logo.png">
+            </figure>
+        </header>
+        <main class="main">
+            <section class="principal">
+            <div class="menu">
+            <h1>Calculadora de Juros</h1>
+   
+            <label for="principal">Valor Principal ou Capital (R$):</label>
+            <br>
+            <input type="number" id="principal" placeholder="Digite o valor principal" required>
+            <br>
+            <label for="taxaDeJuros">Taxa de Juros Anual (%):</label>
+            <br>
+            <input type="number" id="taxaDeJuros" placeholder="Digite a taxa de juros" required>
+            <br>
+            <label for="periodoAnos">Período ou Tempo (Anos):</label>
+            <br>
+            <input type="number" id="periodoAnos" placeholder="Digite o período em anos" required>
+            <br>
+            <input type="submit" onclick="calcularJuros()" value="Calcular" class="botao">
+            <p id="resultado"></p>
+            <br>
+            <a href="pag1.html"><input type="submit" value="Voltar" class="botao"></a>
+            <br>
+            <script src="Juros.js"></script>
+        </div>
+        </section>
+        </main>
+        </div>
+    </body>
+    </html>

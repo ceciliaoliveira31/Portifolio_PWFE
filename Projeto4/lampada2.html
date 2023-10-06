@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title> Lâmpada | JS </title>
+        <body>
+            <h1>Acenda a lâmpada</h1>
+            <img src="lampada-apagada.jpg" id="lampada" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)">
+        <script>
+            var quebrada = false
+            function mudaLampada(tipo){
+            if (tipo==1 && quebrada==false){
+                document.getElementById("lampada").src="lampada-acesa.jpg"
+            }
+            else if (tipo==2 && quebrada==false){
+                document.getElementById("lampada").src="lampada-apagada.jpg"
+            }
+            else {(tipo==3 && quebrada==false)
+                document.getElementById("lampada").src="lampada-quebrada.jpg"
+                quebrada=true
+            }
+            }
+            
+        
+        </script>
+</body>
+</header>
+</html>

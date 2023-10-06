@@ -1,0 +1,157 @@
+
+/*DOCUMENTOCSS*/
+
+/*RESET CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px red solid; */
+}
+
+body {
+    font-family: helvetica;
+    background-image: url(imagens/fundo.png);
+
+}
+#tudo {
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000099;
+}
+
+header {
+    height: 100px;
+    padding-top: 30px;
+
+}
+
+header figure {
+    height: 50px;
+    margin-left: 30px;
+}
+
+header figure img {
+    height: 100%;
+}  
+main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.principal{
+    background-color: #4b5e7b8a;
+    border-radius: 8px;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.principal2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 40%;
+    min-height: 70%;
+    background-color: #4b5e7b8a;
+    border-radius: 8px;
+    margin: 5% auto;
+}
+.formulario{
+    width: 90%;
+    margin: 10% auto;
+
+
+}
+.menu{
+    width: 400px;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section form {
+    width: 300px;
+    margin: 75px auto;
+   
+}
+
+main section input{
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0 5px 0;
+    background-color: #4c4c4c;
+    color: #ddd;
+    padding: 10px;
+    font-size: 18px;
+}
+
+main section h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+main section form input::placeholder{
+    color: #a4a4a4;
+    font-weight: 400;
+}
+
+.botao{
+    background-color: #6f3fd7;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1.0s;
+    width: 70%;
+}
+
+.botao:hover{
+    background-color: #3e00c4;
+}
+.vermelho{
+    background-color: #3e00c4;
+}
+.vermelho:hover{
+    background-color: #6f3fd7;
+}
+
+a{
+    width: 100%;
+    text-align: center;
+}
+
+.linha{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 3%;
+    color: #ddd;
+}
+@media(max-width: 768px){
+    main{
+        min-height: 50%;
+    }
+    .principal{
+        width: 60%;
+    }
+}

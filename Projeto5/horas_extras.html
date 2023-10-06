@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_calculadoras.css">
+    <link rel="icon" href="imagens/logo1.jpg">
+    <title>HORAS EXTRAS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Mukta&display=swap');
+    </style>
+</head>
+<body>
+    <div class="tudo">
+    <header>
+        <figure>
+            <img src = "imagens/logo1.jpg">
+        </figure>
+    </header>
+    <main>
+        <section class="principal">
+            <div class="menu">
+                <h1 class="titulo">CÁLCULO DE HORAS EXTRAS</h1>
+               
+                <label for="salarioMensal">Salário Mensal Bruto:</label>
+                <br>
+                <input type="number" id="salarioMensal" >
+                <br>
+
+                <label for="horasExtrasNormais">Horas Extras - dias normais:</label>
+                <br>
+                <input type="number" id="horasExtrasNormais" >
+                <br>
+
+                <label for="horasExtrasFinaisSemana">Horas Extras - finais de semana:</label>
+                <br>
+                <input type="number" id="horasExtrasFinaisSemana" >
+                <br>
+
+                <input type="submit" onclick="calcularHorasExtras()" value="Calcular" class="botao">
+                <br>
+                <a href="index.html"><input type="submit" value="Voltar" class="botao"></a>
+
+                <h1>Aqui vai o resultado...</h1>
+        <p id="res"></p>
+    </div>
+    <div class="data">
+        <p id="data"></p>
+        <script src="data.js"> </script>
+    </div>
+    </section>
+    </main>
+</div>
+    <script src="horas_extras.js"></script>
+</body>
+</html>

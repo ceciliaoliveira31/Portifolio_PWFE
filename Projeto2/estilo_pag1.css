@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px red solid; */
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Mukta', sans-serif;
+
+}
+#tudo {
+    height: 100vh;
+    width: 100vw;
+    background-color: #e996f291;
+}
+
+header {
+    height: 100px;
+    padding-top: 30px;
+    background-color: 666666ff;
+
+}
+
+header figure {
+    height: 100px;
+    margin-left: 30px;
+}
+
+header figure img {
+    height: 100%;
+}  
+main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: 666666ff;
+}
+
+.principal{
+    background-color: #e996f291;
+    border-radius: 8px;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.principal2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 40%;
+    min-height: 70%;
+    background-color: #881a1a;
+    border-radius: 8px;
+    margin: 5% auto;
+}
+.formulario{
+    width: 90%;
+    margin: 10% auto;
+
+
+}
+.menu{
+    width: 500px;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section form {
+    width: 300px;
+    margin: 75px auto;
+   
+}
+
+main section input{
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0 5px 0;
+    background-color: #871063;
+    color: #ddd;
+    padding: 10px;
+    font-size: 18px;
+}
+
+main section h1 {
+    color: #000000;
+    font-size: 30px;
+    padding: 20px;
+}
+
+main section form input::placeholder{
+    color: #a4a4a4;
+    font-weight: 400;
+}
+
+.botao{
+    background-color: rgb(180, 67, 224);
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1.0s;
+    width: 70%;
+}
+
+.botao:hover{
+    background-color: rgb(180, 67, 224);
+}
+.vermelho{
+    background-color: rgb(180, 67, 224);
+}
+.vermelho:hover{
+    background-color: #ffffff;
+}
+
+a{
+    width: 100%;
+    text-align: center;
+}
+
+.linha{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 3%;
+    color: #ddd;
+}
+@media(max-width: 768px){
+    main{
+        min-height: 50%;
+    }
+    .principal{
+        width: 60%;
+    }
+}
+.data{
+    color: #ffffff;
+}

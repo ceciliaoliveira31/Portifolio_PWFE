@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>AUMENTO SALARIAL</title>
+    <link rel="stylesheet" href="estilo_calculadoras.css">
+    <link rel="icon" href="imagens/logo1.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Mukta&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="tudo">
+    <header>
+        <figure>
+            <img src = "imagens/logo1.jpg">
+        </figure>
+    </header>
+    <main>
+        <section class="principal">
+            <div class="menu">
+                <h1 class="titulo">CÁLCULO DE AUMENTO SALARIAL</h1>
+               
+                <label for="salario">Salário atual:</label>
+                <br>
+                <input type="number" name="n1" id="salario">
+                <br>
+
+                <input type="submit" onclick="calcular()" value="Calcular" class="botao">
+                <br>
+                <a href="index.html"><input type="submit" value="Voltar" class="botao"></a>
+
+                <h1>Aqui vai o resultado...</h1>
+        <p id="res"></p>
+    </div>
+    <div class="data">
+        <p id="data"></p>
+        <script src="data.js"> </script>
+    </div>
+    </section>
+    </main>
+    <script src="aumento_salarial.js">
+
+    </script>
+</body>
+</html>
